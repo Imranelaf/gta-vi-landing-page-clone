@@ -1,6 +1,25 @@
 @import "tailwindcss";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-body{
-    background-color: black;
+body {
+  background-color: black;
+}
+
+.masking-image {
+  -webkit-mask-image: url("/images/mask.svg");
+  mask-image: url("/images/mask.svg"); 
+  
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  -webkit-mask-position: center;
+  mask-position: center;
+
+  -webkit-mask-size: cover;
+  mask-size: cover;
+
+
 }
