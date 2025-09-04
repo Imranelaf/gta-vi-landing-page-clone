@@ -4,8 +4,26 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+  font-family: "Long";
+  src: url("/fonts/long.woff");
+}
+
+@font-face {
+  font-family: "Round";
+  src: url("/fonts/round.woff");
+}
+
+@font-face {
+  font-family: "Round Bold";
+  font-weight: bold;
+  src: url("/fonts/round-bold.woff");
+}
+
+
 body {
-  background-color: black;
+  background-color: #131317;
 }
 
 .masking-image {
@@ -21,5 +39,14 @@ body {
   -webkit-mask-size: cover;
   mask-size: cover;
 
+}
 
+.ComingSoon{
+	background: linear-gradient(90deg, #ff0080, #ff8c00, #40e0d0);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	background-clip: text;
+  	color: transparent;
+	font-family: 'Round Bold';
+	
 }
