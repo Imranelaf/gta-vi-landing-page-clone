@@ -23,6 +23,7 @@ export default function Hero(){
 				start: 'top top',
 				end: '+=200%',
 				scrub: 3,
+                invalidateOnRefresh: true
 
 			}
 		})
@@ -51,11 +52,13 @@ export default function Hero(){
     return (
 		<section>
 			<HeroVisuals />
+            <div className='relative h-[-20%] w-full flex flex-col justify-center items-center'>
 
-            <div className=' absolute z-1 top-[200%] top-12 left-[32%] flex flex-col justify-center items-center'>
+            <div className=' absolute z-1 flex flex-col justify-center items-center'>
 				<img src='./images/fav.png' alt='logo' className='w-80 h-80 logo imageSoon' />
 				<h1 className="ComingSoon text-9xl"> Coming <br /> May 26th <br /> 2026</h1>
 			</div>
+            </div>
 
 		</section>
 
