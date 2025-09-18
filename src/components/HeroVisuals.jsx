@@ -56,8 +56,8 @@ export default function HeroVisuals(){
             {/* Second logo overlay - responsive sizing */}
             <div className="absolute top-8 sm:top-12 md:top-14 lg:top-16 flex justify-center w-full z-20">
                 <img 
-                    className="secondLogo opacity-0
-                             w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 
+                    className="secondLogo
+                             w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-80 lg:h-80
                              object-contain" 
                     src="/images/hero-text.svg" 
                     alt="hero text logo" 
