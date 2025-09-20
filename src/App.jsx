@@ -2,14 +2,15 @@ import Navbar from "./components/Navbar.jsx";
 import Hero from "./pages/Hero.jsx";
 
 
-export default function App(){
+export default function App() {
 
-    return(
+    return (
         <>
         <Navbar />
 	    <Hero /> 
 
-     
+            
+
         </>
     )
 }

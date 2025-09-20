@@ -2,14 +2,14 @@
 
 export default function HeroVisuals(){
     return(
-        <div className="hero-section relative w-full h-screen flex flex-col items-center justify-center overflow-hidden">
+        <div className="hero-section relative w-full h-screen flex flex-col items-center justify-center">
             
             <img 
                 src="./images/hero-bg.webp" 
                 alt="Main hero background" 
                 className="hero_bg absolute inset-0 w-full h-full object-cover" 
             />
-
+       
             
             <img 
                 src="./images/hero-text.webp" 
@@ -45,24 +45,14 @@ export default function HeroVisuals(){
             </div>
 
             {/* Masking image */}
-            <div className="masking-image mask absolute inset-0 w-full h-full opacity-0">
+            <div className="masking-image mask absolute lg:top-[5%] top-[25%] flex justify-center w-full ">
                 <img 
-                    src="/images/hero-bg.webp" 
-                    alt="Hero background mask" 
-                    className="w-full h-full object-cover" 
-                />
-            </div>
-
-            {/* Second logo overlay - responsive sizing */}
-            <div className="absolute top-8 sm:top-12 md:top-14 lg:top-16 flex justify-center w-full z-20">
-                <img 
-                    className="secondLogo
-                             w-32 h-32 sm:w-48 sm:h-48 md:w-64 md:h-64 lg:w-80 lg:h-80
-                             object-contain" 
                     src="/images/hero-text.svg" 
-                    alt="hero text logo" 
+                    alt="Hero background mask" 
+                    className="w-[25vw] min-w-[220px]  h-auto object-cover" 
                 />
-            </div>
+            </div> 
+
         </div>
     )
 }

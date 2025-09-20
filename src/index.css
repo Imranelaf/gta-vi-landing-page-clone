@@ -24,11 +24,12 @@
 
 body {
   background-color: #131317;
+  overflow-x: hidden;
 }
 
 .masking-image {
-  -webkit-mask-image: url("/images/mask.svg");
-  mask-image: url("/images/mask.svg"); 
+  -webkit-mask-image: url("/images/hero-bg.webp");
+  mask-image: url("/images/hero-bg.webp"); 
   
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
