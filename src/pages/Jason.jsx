@@ -1,12 +1,16 @@
-
-
-export default function Jason(){
-
-    return(
-
-        <div className="h-[100vh] w-full bg-green-500">
-
-        </div>
-    )
-
+export default function Jason() {
+  return (
+    <section >
+      <div className="h-dvh">
+        <video
+  muted
+  loop
+  autoPlay  // Add this
+  preload="auto"
+  src="/videos/output1.mp4"
+  className="h-screen w-screen object-cover"
+/>
+      </div>
+    </section>
+  );
 }
