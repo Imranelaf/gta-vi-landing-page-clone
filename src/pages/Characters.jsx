@@ -16,10 +16,10 @@ const characters = [
   },
   {
     id: "lucia",
-    name: "Lucia Duval",
-    slogan: "Lucia wants an easy life, but things just keep getting harder.",
+    name: "Lucia Caminos",
+    slogan: "Lucia’s father taught her to fight as soon as she could walk.",
     description:
-      "Lucia grew up around grifters and crooks. After a stint in the Army trying to shake off her troubled teens, she found herself in the Keys doing what she knows best, working for local drug runners. It might be time to try something new.",
+      "Life has been coming at her swinging ever since. Fighting for her family landed her in the Leonida Penitentiary. Sheer luck got her out. Lucia’s learned her lesson — only smart moves from here.",
     video: "/videos/output2.mp4",
     images: [
       "./images/lucia-2.webp", // main
