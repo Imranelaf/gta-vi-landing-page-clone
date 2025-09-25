@@ -2,53 +2,20 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
+import Video from "../components/BgVideo";
 
 export default function Jason() {
-  const bgVideo = useRef(null);
-  
-  useGSAP(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    
-    gsap.set('.infos', { y: '300vh' });
-    gsap.set('.Character', { opacity: 0 });
-    
 
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".Character",
-        start: "top top",
-        end: "+=250% top",
-        pin: true,
-        scrub: 4, 
-        anticipatePin: 1,
-      },
-    });
-   
-    
-
-    bgVideo.current.onloadedmetadata = () => {
-      tl.to('.Character', { opacity: 1, duration: 2, ease: 'power1.inOut' })
-      .to(bgVideo.current, { currentTime: bgVideo.current.duration, duration: 3, ease: 'none' }, '<')
-      .to('.Character', { opacity: 0, ease: 'power1.inOut' });
-    }
-   
-  });
 
   return (
     <section className="flex flex-col items-start w-full w-auto relative">
       {/* Background video container */}
-      <div className="Character absolute  z-10">
-        <video
-          ref={bgVideo}
-          muted
-          playsInline
-          preload="auto"
-          src="/videos/output1.mp4"
-          className="h-screen w-screen inset-0 object-cover"
-        />
-      </div>
+      <div>
+     <Video link="/videos/output1.mp4" id="jason" />
+
+     </div>
       
-      <div className="flex flex-col lg:flex-row items-start w-full min-h-screen infos">
+      <div className="flex flex-col lg:flex-row items-start w-full min-h-screen infos absolute top-[200vh] z-[50]">
         {/* Left content */}
         <div className="flex-1 p-6 lg:p-12 lg:ml-64">
           <h1 className="carachterName text-2xl lg:text-4xl font-bold mb-3">Jason Duval</h1>
@@ -76,7 +43,7 @@ export default function Jason() {
         </div>
 
         {/* Right content (stack of images) */}
-        <div className="flex-1 lg:w-1/4 lg:h-screen space-y-6">
+        <div className="flex-1 lg:w-1/4 lg:h-screen space-y-6 lg:mt-110">
           {/* Top image */}
           <div className="group relative w-full lg:h-3/4 overflow-hidden shadow-lg bg-yellow-100">
             <img
