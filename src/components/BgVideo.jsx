@@ -46,7 +46,7 @@ export default function Video({ link, id }) {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative w-full h-screen z-10">
+    <section ref={sectionRef} className="relative w-full h-screen z-10" id={id}>
       <video
         ref={videoRef}
         muted
