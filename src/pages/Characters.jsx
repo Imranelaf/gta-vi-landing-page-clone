@@ -35,7 +35,7 @@ export default function Characters(){
     return(
 <>
         <CharacterSection data={characters[0]} />
-         <CharacterSection data={characters[1]} />
+         <CharacterSection data={characters[1]} switching={true} />
 </>
 
     )

@@ -1,7 +1,10 @@
 
-export default function LeftContent({ data }) {
+export default function LeftContent({ data, flip=false}) {
+
+  console.log('This is the flip value', flip);
+  
   return (
-    <div className="flex-1 p-6 lg:p-12 lg:ml-64">
+    <div className={`flex-1 p-6 lg:p-12 ${flip ? 'lg:mr-64'  : 'lg:ml-64'}`}>
       <h1 className="carachterName text-2xl lg:text-4xl font-bold mb-3">
         {data.name}
       </h1>

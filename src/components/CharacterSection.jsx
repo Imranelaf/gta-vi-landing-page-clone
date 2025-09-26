@@ -3,7 +3,7 @@ import LeftContent from "./LeftContent";
 import RightContent from "./RightContent";
 
 
-export default function CharacterSection({ data }) {
+export default function CharacterSection({ data, switching =false }) {
   const { name, slogan, description, images, ...rightData } = data;
 
   const leftData = { name, slogan, description, mainImage: images[0] };
@@ -15,10 +15,21 @@ export default function CharacterSection({ data }) {
         <Video link={data.video} id={data.id} />
       </div>
 
-      <div className="flex flex-col lg:flex-row items-start w-full min-h-screen infos absolute top-[200vh] z-[50]">
-        <LeftContent data={leftData} />
-        <RightContent data={rightData}/>
-      </div>
+      {
+        switching ?
+          (
+            <div className="flex flex-col lg:flex-row items-start w-full min-h-screen infos absolute top-[200vh] z-[50]">
+            <RightContent data={rightData}/>
+            <LeftContent data={leftData} flip={switching} />
+
+            
+            </div>
+          ) :
+          (<div className="flex flex-col lg:flex-row items-start w-full min-h-screen infos absolute top-[200vh] z-[50]">
+              <LeftContent data={leftData} />
+              <RightContent data={rightData} />
+          </div>)
+      }
     </section>
   );
 }
