@@ -35,6 +35,7 @@ export default function Characters(){
     return(
 <>
         <CharacterSection data={characters[0]} />
+        <div className="h-[70vh]" />
          <CharacterSection data={characters[1]} switching={true} />
 </>
 
