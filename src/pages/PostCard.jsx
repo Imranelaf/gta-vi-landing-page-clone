@@ -1,6 +1,47 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRef } from "react";
+
 export default function PostCard() {
+
+    const cardVideoRef = useRef(null);
+    const sectionRef = useRef(null);
+
+  useGSAP(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: sectionRef.current,
+        start: "top top",
+        end: "+=200% top",
+        pin: true,
+        scrub: true,
+        anticipatePin: 1,
+      },
+    });
+
+    // Animate only when metadata is loaded
+    cardVideoRef.current.onloadedmetadata = () => {
+      tl.to(
+          cardVideoRef.current,
+          {
+            currentTime: cardVideoRef.current.duration,
+            duration: 3,
+            ease: "power1.inOut",
+          },
+        
+        )
+        
+    };
+  }, []);
+
+
+
     return (
-        <section className="min-h-screen w-full flex justify-center items-center p-4 bg-gradient-to-tr from-black to-indigo-900">
+        
+        <section ref={sectionRef} className="min-h-screen w-full flex justify-center items-center p-4 bg-gradient-to-tr from-black to-indigo-900">
             <div className="relative lg:w-4/5 lg:h-4/5 w-full h-[50vh] aspect-video shadow-2xl bg-white  overflow-hidden">
                 {/* Overlay Image - Top Left */}
                 <img
@@ -11,9 +52,8 @@ export default function PostCard() {
 
                 {/* Background Video */}
                 <video
+                ref={cardVideoRef}
                     muted
-                    autoPlay
-                    loop
                     playsInline
                     preload="auto"
                     src='/videos/postcard-vd.mp4'
