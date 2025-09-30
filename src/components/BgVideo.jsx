@@ -26,7 +26,7 @@ export default function Video({ link, id }) {
       tl.fromTo(
         sectionRef.current,
         { opacity: 0 },
-        { opacity: 1, duration: 2, ease: "power1.inOut" }
+        { opacity: 1, duration: 1, ease: "power1.inOut" }
       )
         .to(
           videoRef.current,

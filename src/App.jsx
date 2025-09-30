@@ -9,9 +9,10 @@ export default function App() {
 
     return (
         <>
-          {/*   <Navbar />
-            <Hero />
-            <Characters /> */}
+            <Navbar />
+            <Hero /> 
+            <Characters /> 
+            <div className="h-[80vh]" />
             <PostCard />
             <Ending />
 
