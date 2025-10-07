@@ -2,7 +2,7 @@ import ScaleBotton from "./ScaleBotton";
 
 export default function RightContent({ data }) {
   return (
-    <div className="flex-1 lg:w-1/4 lg:h-screen space-y-6 lg:mt-105">
+    <div className="rightImages flex-1 lg:w-1/4 lg:h-screen space-y-6 lg:mt-105">
       {/* Top image */}
       <div className="group relative w-full lg:h-3/4 overflow-hidden shadow-lg bg-yellow-100">
         <img
@@ -25,3 +25,4 @@ export default function RightContent({ data }) {
     </div>
   );
 }
+
