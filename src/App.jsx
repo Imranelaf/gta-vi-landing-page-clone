@@ -3,7 +3,6 @@ import Hero from "./pages/Hero.jsx";
 import Characters from "./pages/Characters.jsx";
 import Ending from "./pages/Ending.js";
 import PostCard from "./pages/PostCard.jsx";
-import Footer from "./pages/Footer.jsx";
 
 
 export default function App() {
@@ -16,7 +15,7 @@ export default function App() {
             <div className="h-[80vh]" />
             <PostCard />
             <Ending />
-            <Footer />
+            
 
             
 

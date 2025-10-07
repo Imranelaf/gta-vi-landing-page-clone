@@ -12,8 +12,6 @@ export default function Hero(){
 	useGSAP(() => {
 		gsap.set('.mask', { scale: 5, opacity: 0 });
 		gsap.set('.hero_bg', { scale: 1.25});
-		gsap.set('.secondLogo',{opacity:0});
-        gsap.set('.imageSoon',{opacity:0});
         gsap.set('.ComingSoon',{opacity:0, scale:1.3});
 
 		const tl = gsap.timeline({

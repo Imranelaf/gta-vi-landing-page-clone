@@ -1,8 +1,6 @@
 import ScaleBotton from "./ScaleBotton";
 
 export default function LeftContent({ data, flip=false}) {
-
-  console.log('This is the flip value', flip);
   
   return (
     <div className={`flex-1 p-6 lg:p-12 ${flip ? 'lg:mr-64'  : 'lg:ml-64'}`}>
