@@ -15,9 +15,6 @@ export default function App() {
             <div className="h-[80vh]" />
             <PostCard />
             <Ending />
-            
-
-            
 
         </>
     )

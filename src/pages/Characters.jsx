@@ -13,6 +13,7 @@ const characters = [
       "./images/jason-3.webp", // right top
       "./images/jason-1.webp", // right bottom
     ],
+    videoPosition: 'size-full object-cover md:[object-position:50%_center] [object-position:75%_center]'
   },
   {
     id: "lucia",
@@ -26,6 +27,7 @@ const characters = [
       "./images/lucia-3.webp", // right top
       "./images/lucia-1.webp", // right bottom
     ],
+    videoPosition: 'size-full object-cover md:[object-position:50%_center] [object-position:20%_center]'
   },
 ];
 

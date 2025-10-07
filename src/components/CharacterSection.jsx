@@ -12,7 +12,7 @@ export default function CharacterSection({ data, switching =false }) {
   return (
     <section className="flex flex-col items-start w-full w-auto relative" id={data.id}>
       <div>
-        <Video link={data.video} id={data.id} />
+        <Video link={data.video} id={data.id} vStyle={data.videoPosition} />
       </div>
 
       {

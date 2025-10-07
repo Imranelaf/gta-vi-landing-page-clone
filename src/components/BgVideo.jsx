@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 
-export default function Video({ link, id }) {
+export default function Video({ link, id, vStyle=" h-screen w-screen inset-0 object-cover" }) {
   const videoRef = useRef(null);
   const sectionRef = useRef(null);
 
@@ -53,7 +53,7 @@ export default function Video({ link, id }) {
         playsInline
         preload="auto"
         src={link}
-        className="h-screen w-screen inset-0 object-cover"
+        className={`h-screen w-screen inset-0 object-cover ${vStyle}`}
       />
     </section>
   );

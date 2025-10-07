@@ -36,7 +36,7 @@ export default function PostCardHelper({data, id}) {
       className="min-h-screen mb-0 z-100 w-full flex justify-center items-center p-4 bg-gradient-to-b from-[#131317] via-indigo-900 to-[#131317]" 
       id={id}
     >
-      <div className="relative lg:w-4/5 lg:h-4/5 w-full h-[50vh] aspect-video shadow-2xl bg-white overflow-hidden rotate-3 hover:rotate-0 transition duration-500">
+      <div className="relative lg:w-4/5 lg:h-4/5 w-full h-[50vh] aspect-video shadow-2xl bg-white overflow-hidden lg:rotate-3 hover:rotate-0 transition duration-500">
         {/* Overlay Image - Top Left */}
         <img
           src={data.image}

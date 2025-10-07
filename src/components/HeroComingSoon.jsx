@@ -3,7 +3,7 @@ export default function HeroComingSoon() {
 	return (
 
 
-		<div className="ComingSoon fixed z-50 inset-0 flex flex-col justify-center items-center">
+		<div className="ComingSoon circle fixed z-50 inset-0 flex flex-col justify-center items-center">
 			<img
 				src="./images/fav.png"
 				alt="logo"

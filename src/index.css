@@ -52,6 +52,13 @@ body {
 	
 }
 
+.circle {
+  mask-image: radial-gradient(circle at 50% 100%, black 20%, transparent 20%);
+  mask-size: 100% 100%;
+  mask-position: center bottom;
+  mask-repeat: no-repeat;
+}
+
 .carachterName{
 
   font-size: 4.5rem;

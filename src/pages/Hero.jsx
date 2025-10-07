@@ -6,13 +6,19 @@ import HeroVisuals from "../components/HeroVisuals";
 import HeroComingSoon from '../components/HeroComingSoon';
 
 
-export default function Hero(){
+export default function Hero() {
 
-      gsap.registerPlugin(ScrollTrigger);
+	gsap.registerPlugin(ScrollTrigger);
 	useGSAP(() => {
-		gsap.set('.mask', { scale: 5, opacity: 0 });
-		gsap.set('.hero_bg', { scale: 1.25});
-        gsap.set('.ComingSoon',{opacity:0, scale:1.3});
+		gsap.set('.mask', { scale: 12, opacity: 0, y:'300%' });
+		gsap.set('.hero_bg', { scale: 1.25 });
+		gsap.set('.secondLogo', { opacity: 0 });
+		gsap.set('.imageSoon', { opacity: 0 });
+		gsap.set('.ComingSoon', {
+			maskSize: '0% 0%',
+			maskPosition: '50% 100%',
+			opacity: 0
+		});
 
 		const tl = gsap.timeline({
 
@@ -22,7 +28,7 @@ export default function Hero(){
 				start: 'top top',
 				end: '+=200%',
 				scrub: 3,
-                invalidateOnRefresh: true
+				invalidateOnRefresh: true
 
 			}
 		})
@@ -30,27 +36,27 @@ export default function Hero(){
 		tl
 			.to('.hiding', { opacity: 0, ease: 'power1.inOut' })
 			.to('.hero_bg', { scale: 1, opacity: 0, ease: 'power1.inOut' })
-			.to('.mask', { scale: .8, opacity: 1, duration: 3, y:'10%', ease: 'power1.inOut' }, "-=0.2")
-            .to('.ComingSoon', { 
-        opacity: 1,
-		scale:1,
-		duration:2,    
-        ease: 'power1.inOut' 
-      }, "-=1")
-	  .to('.mask', { opacity: 0 })
-	  
-	  .to('.ComingSoon', { 
-        opacity: 0,     
-        ease: 'power1.inOut' 
-      }, '-=0.2')
+			.to('.mask', { scale: 1, opacity: 1, duration: 3, y:0, ease: 'power1.inOut' }, "-=0.2")
+			.to('.ComingSoon', {
+				opacity: 1,
+				maskSize: '400% 400%',
+				maskPosition: '50% 100%',
+				duration: 3,
+				ease: 'power1.inOut'
+			}, "-=0.5")
+			.to('.mask', { opacity: 0 }, '-=0.5')
+			.to('.ComingSoon', {
+				opacity: 0
+			})
 			
-        
+
+
 
 	});
 
-    return (
+	return (
 		<section>
-			<HeroVisuals /> 
+			<HeroVisuals />
 			<HeroComingSoon />
 		</section>
 
