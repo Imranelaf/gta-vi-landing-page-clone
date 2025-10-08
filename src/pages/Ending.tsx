@@ -15,7 +15,7 @@ export default function Ending() {
                 <img src="./images/fav.png" alt="logo"
                     className="relative h-auto w-3/5 md:w-2/5 lg:w-1/5 object-contain"
                 />
-                <h1 className="ComingSoon lg:text-[6rem] text-[3rem] text-center leading-tight">
+                <h1 className="ComingSoonStyle lg:text-[6rem] text-[3rem] text-center leading-tight">
                     Coming <br /> May 26th <br /> 2026
                 </h1>
                 <div className="flex gap-x-8 w-auto">

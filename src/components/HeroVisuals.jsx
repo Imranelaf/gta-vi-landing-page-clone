@@ -30,7 +30,7 @@ export default function HeroVisuals() {
                 />
                 {/* Masking image */}
            
-               <div className="masking-image mask absolute z-50 inset-0 flex flex-col justify-center items-center lg:ml-6 ml-4">
+               <div className="masking-image mask absolute z-10 inset-0 flex flex-col justify-center items-center lg:ml-6 ml-4">
 			<img
 				src="./images/mask.svg"
 				alt="logo"
