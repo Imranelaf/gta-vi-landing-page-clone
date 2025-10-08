@@ -28,7 +28,20 @@ export default function HeroVisuals() {
                     alt="play button"
                     className="w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 ml-1"
                 />
-            </div>
+                {/* Masking image */}
+           
+               <div className="masking-image mask absolute z-50 inset-0 flex flex-col justify-center items-center lg:ml-6 ml-4">
+			<img
+				src="./images/mask.svg"
+				alt="logo"
+				className="relative h-auto w-3/5 md:w-2/5 lg:w-1/5 object-contain "
+			/>
+			<h1 className="lg:text-[6rem] text-[3rem] text-center leading-tight opacity-0">
+				Coming <br /> May 26th <br /> 2026
+			</h1>
+		</div>
+
+        </div>
 
 
             <div className="hiding absolute bottom-4 left-1/2 transform -translate-x-1/2 
@@ -43,19 +56,6 @@ export default function HeroVisuals() {
                     className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
                 />
             </div>
-
-            {/* Masking image */}
-           
-               <div className="masking-image mask absolute z-50 inset-0 flex flex-col justify-center items-center lg:ml-6 ml-4">
-			<img
-				src="./images/mask.svg"
-				alt="logo"
-				className="relative h-auto w-3/5 md:w-2/5 lg:w-1/5 object-contain "
-			/>
-			<h1 className="lg:text-[6rem] text-[3rem] text-center leading-tight opacity-0">
-				Coming <br /> May 26th <br /> 2026
-			</h1>
-		</div>
 
         </div>
     )

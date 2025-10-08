@@ -28,7 +28,8 @@ export default function Hero() {
 				start: 'top top',
 				end: '+=200%',
 				scrub: 3,
-				invalidateOnRefresh: true
+				invalidateOnRefresh: true,
+				
 
 			}
 		})
