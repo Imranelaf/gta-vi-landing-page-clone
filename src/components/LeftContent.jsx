@@ -1,4 +1,4 @@
-import ScaleBotton from "./ScaleBotton";
+import ScaleBotton from "./ScaleBotton.jsx";
 
 export default function LeftContent({ data, flip=false}) {
   

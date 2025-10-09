@@ -1,4 +1,4 @@
-import CharacterSection from "../components/CharacterSection";
+import CharacterSection from "../components/CharacterSection.jsx";
 
 const characters = [
   {

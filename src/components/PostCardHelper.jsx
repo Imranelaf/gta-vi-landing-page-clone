@@ -5,7 +5,7 @@ import { useRef } from "react";
 
 export default function PostCardHelper({data, id}) {
   const cardVideoRef = useRef(null);
-  const sectionRef = useRef(null); // ADD THIS - you forgot to define it
+  const sectionRef = useRef(null);
 
   useGSAP(() => {
     gsap.registerPlugin(ScrollTrigger);

@@ -4,14 +4,17 @@ import LeftContent from "./LeftContent";
 import RightContent from "./RightContent";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
-import { useRef } from "react";
+import { useMemo } from "react";
 
 export default function CharacterSection({ data, switching = false }) {
 
 
   const { name, slogan, description, images, ...rightData } = data;
 
-  const leftData = { name, slogan, description, mainImage: images[0] };
+const leftData = useMemo(
+  () => ({ name, slogan, description, mainImage: images[0] }),
+  [name, slogan, description, images]
+);
   rightData.images = images;
 
   useGSAP(() => {
