@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./pages/Hero.jsx";
 import Characters from "./pages/Characters.jsx";
-import Ending from "./pages/Ending.js";
+import Ending from "./pages/Ending.jsx";
 import PostCard from "./pages/PostCard.jsx";
 
 

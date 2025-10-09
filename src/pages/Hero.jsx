@@ -12,8 +12,6 @@ export default function Hero() {
 	useGSAP(() => {
 		gsap.set('.mask', { scale: 12, opacity: 0, y:'300%' });
 		gsap.set('.hero_bg', { scale: 1.25 });
-		gsap.set('.secondLogo', { opacity: 0 });
-		gsap.set('.imageSoon', { opacity: 0 });
 		gsap.set('.ComingSoon', {
 			maskSize: '0% 0%',
 			maskPosition: '50% 100%',
